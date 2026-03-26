@@ -1,38 +1,31 @@
-import { BadgeCheck, Clock3, FileText, Handshake, Wallet } from "lucide-react";
-
 export function HeroIllustration() {
   return (
-    <div className="relative h-[360px] w-full max-w-[560px] overflow-hidden rounded-[28px] bg-gradient-to-br from-[#033D33] via-[#02352D] to-[#022D26] ring-1 ring-white/10">
-      <div className="absolute inset-0 opacity-70">
-        <div className="absolute left-[10%] top-[16%] text-[#52FF8F]">
-          <Clock3 size={22} strokeWidth={1.6} />
-        </div>
-        <div className="absolute right-[14%] top-[22%] text-[#52FF8F]">
-          <FileText size={22} strokeWidth={1.6} />
-        </div>
-        <div className="absolute left-[22%] bottom-[28%] text-[#52FF8F]">
-          <Wallet size={22} strokeWidth={1.6} />
-        </div>
-        <div className="absolute right-[22%] bottom-[34%] text-[#52FF8F]">
-          <BadgeCheck size={22} strokeWidth={1.6} />
-        </div>
-      </div>
+    <div className="relative h-[500.39px] w-[757.19px] overflow-hidden">
+      <img
+        src="/assets/hand-shake%20vector.svg"
+        alt=""
+        className="absolute left-0 top-0 h-full w-full object-contain"
+      />
 
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="relative text-[#6CFF98]">
-          <Handshake size={320} strokeWidth={1.4} />
-        </div>
-      </div>
+      <img src="/assets/hero-time.svg" alt="" className="absolute left-[138.33px] top-[80.86px] h-[63.21px] w-[63.21px]" />
+      <img
+        src="/assets/hero-credit-card.svg"
+        alt=""
+        className="absolute left-[534px] top-[20px] h-[52px] w-[52px] opacity-90"
+      />
+      <img src="/assets/hero-walet.svg" alt="" className="absolute left-[180px] top-[310px] h-[52px] w-[52px] opacity-90" />
+      <img src="/assets/hero-chart.svg" alt="" className="absolute left-[560px] top-[320px] h-[52px] w-[52px] opacity-90" />
 
-      <div className="absolute bottom-10 left-1/2 w-[220px] -translate-x-1/2">
-        <div className="rounded-lg bg-black/25 px-4 py-2 text-center ring-1 ring-white/10 backdrop-blur">
-          <div className="text-[11px] font-semibold tracking-widest text-white/70">LOAN REQUEST</div>
-          <div className="mt-2 inline-flex items-center justify-center rounded-sm border border-[#32D26B] bg-[#0E3A2C] px-3 py-1 text-[12px] font-extrabold tracking-widest text-[#32D26B]">
+      <div className="absolute left-[272.28px] top-[444.21px] h-[75.7px] w-[178.92px]">
+        <div className="absolute left-0 top-[34.47px] h-[41.24px] w-[178.92px] border-[3px] border-[#6CFF7B] bg-transparent">
+          <div className="absolute left-[5.7px] top-[2.96px] text-[29.19px] font-extrabold leading-[35.34px] text-[#6CFF7B]">
             APPROVED
           </div>
+        </div>
+        <div className="absolute left-0 top-0 text-[12px] font-normal leading-[28px] tracking-[0.32em] text-white">
+          LOAN REQUEST
         </div>
       </div>
     </div>
   );
 }
-

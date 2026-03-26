@@ -1,41 +1,39 @@
-import { BadgeCheck, HandCoins, Repeat2, Send } from "lucide-react";
 import { StepCard } from "@/components/landing/StepCard";
 
 export function StepsSection() {
   return (
-    <section className="mx-auto max-w-[1240px] px-4 pb-16 pt-14 md:px-6">
-      <div className="flex items-end justify-between gap-10">
-        <h2 className="text-[22px] font-semibold tracking-tight text-white">Simple Steps to Get Your Loan</h2>
-        <p className="max-w-[360px] text-right text-xs leading-5 text-white/60">
+    <section className="mx-auto w-[1337.99px] pt-[55px]">
+      <div className="flex w-[1318.73px] items-center justify-between">
+        <div className="text-[36px] font-medium leading-[40px] text-white">Simple Steps to Get Your Loan</div>
+        <div className="w-[375px] text-right text-[20px] font-normal leading-[28px] text-white">
           Our loan process is fast and reliable you can get your loan in as little as 24 hours.
-        </p>
+        </div>
       </div>
 
-      <div className="mt-8 grid gap-5 md:grid-cols-4">
+      <div className="mt-[25px] flex items-center gap-[13px]">
         <StepCard
-          step={1}
+          step="1"
           title="Loan Request"
           description="Choose your preferred loan type and submit a request directly from the app."
-          Icon={Send}
+          iconSrc="/assets/Frame.svg"
         />
         <StepCard
-          step={2}
+          step="2"
           title="Loan Approval"
           description="Our system reviews your request and quickly determines your eligibility."
-          Icon={BadgeCheck}
-          approvedRibbon
+          approvedBadge
         />
         <StepCard
-          step={3}
+          step="3"
           title="Loan Disbursement"
           description="Once approved, your loan is sent instantly to your mobile money account."
-          Icon={HandCoins}
+          iconSrc="/assets/Frame-1.svg"
         />
         <StepCard
-          step={4}
+          step="*"
           title="Repayment"
-          description="Repay your loan through flexible daily, weekly, or monthly payment options."
-          Icon={Repeat2}
+          description="Repay your loan through flexible daily, weekly, or monthly payment options the app."
+          iconSrc="/assets/Frame-2.svg"
         />
       </div>
     </section>

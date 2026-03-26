@@ -14,37 +14,41 @@ const navItems: NavItem[] = [
 
 export function JamboNav() {
   return (
-    <header className="w-full">
-      <div className="pt-6">
-        <div className="w-full bg-black/10 py-5 ring-1 ring-white/10 backdrop-blur">
-          <div className="mx-auto flex max-w-[1240px] items-center justify-between px-4 md:px-6">
-            <Link href="/" className="inline-flex shrink-0 items-center">
-              <span className="block h-16 w-[280px] overflow-hidden md:h-20 md:w-[340px]">
-                <img
-                  src="/creditJambo.png"
-                  alt="Credit Jambo"
-                  className="h-full w-full object-cover object-center"
-                />
-              </span>
-            </Link>
+    <header className="relative h-[74.58px] w-full">
+      <div className="absolute left-[1.65px] top-0 h-[73.55px] w-[1511.65px] bg-[#01382F]" />
 
-            <nav aria-label="Primary" className="hidden items-center gap-10 text-sm text-white/80 md:flex">
-              {navItems.map((item) => (
-                <a key={item.label} href={item.href} className="transition hover:text-white">
-                  {item.label}
-                </a>
-              ))}
-            </nav>
+      <Link href="/" className="absolute left-[94.88px] top-[16.47px] block h-[38.83px] w-[225.03px]">
+        <img src="/creditJambo.png" alt="Credit Jambo" className="h-full w-full object-contain" />
+      </Link>
 
-            <Link
-              href="/"
-              className="inline-flex items-center justify-center rounded-full bg-[#32D26B] px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-white/30"
-            >
-              Get started
-            </Link>
-          </div>
-        </div>
-      </div>
+      <nav aria-label="Primary" className="absolute left-[515.05px] top-[21.89px] h-[28px] w-[484.86px]">
+        {navItems.map((item) => (
+          <a
+            key={item.label}
+            href={item.href}
+            className="absolute top-0 text-[18px] font-normal leading-[28px] text-white"
+            style={{
+              left:
+                item.label === "Home"
+                  ? 0
+                  : item.label === "For business"
+                    ? 101.19
+                    : item.label === "Services"
+                      ? 253.38
+                      : 391.86,
+            }}
+          >
+            {item.label}
+          </a>
+        ))}
+      </nav>
+
+      <Link
+        href="/"
+        className="absolute left-[1270.34px] top-[14.33px] inline-flex h-[43.11px] w-[150.12px] items-center justify-center rounded-[35px] border border-[#04EA6C] bg-[#82FB8E] text-[16px] font-normal leading-[24px] text-[#01382F]"
+      >
+        Get started
+      </Link>
     </header>
   );
 }

@@ -4,11 +4,12 @@ import { StepsSection } from "@/components/landing/StepsSection";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#00473B] via-[#003D33] to-[#002F28]">
-      <JamboNav />
-      <HeroSection />
-      <StepsSection />
+    <main className="min-h-screen bg-[#004D40]">
+      <div className="mx-auto w-[1512px]">
+        <JamboNav />
+        <HeroSection />
+        <StepsSection />
+      </div>
     </main>
   );
 }
-
