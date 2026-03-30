@@ -8,7 +8,7 @@ type StepCardProps = {
 
 export function StepCard({ step, title, description, iconSrc, approvedBadge }: StepCardProps) {
   return (
-    <div className="relative h-[234.34px] w-[324.75px] overflow-hidden rounded-[12px] border border-[rgba(130,251,142,0.26)] bg-[#005244]">
+    <div className="relative h-auto min-h-[280px] sm:min-h-[300px] rounded-xl border border-[rgba(130,251,142,0.26)] bg-[#005244] p-6 hover:scale-[1.02] transition-transform duration-200">
       <div
         className={
           step === "*"
