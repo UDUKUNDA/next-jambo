@@ -28,7 +28,7 @@ export function JamboNav() {
             <img 
               src="/creditJambo.png" 
               alt="Credit Jambo" 
-              className="h-10 sm:h-12 md:h-14 w-auto object-contain drop-shadow-[0_0_22px_rgba(130,251,142,0.18)]"
+              className="h-10 sm:h-12 md:h-14 lg:h-16 xl:h-20 2xl:h-24 w-auto object-contain drop-shadow-[0_0_22px_rgba(130,251,142,0.18)]"
             />
           </Link>
 
