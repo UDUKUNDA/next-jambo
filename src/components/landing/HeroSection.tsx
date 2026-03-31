@@ -26,7 +26,7 @@ export function HeroSection() {
               </div>
             </h1>
 
-            <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 max-w-lg mx-auto lg:mx-0">
+            <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 max-w-lg mx-auto text-justify lg:mx-0 lg:text-left">
               Fast, affordable, and flexible micro-loans tailored to your needs.
             </p>
 
@@ -52,12 +52,12 @@ export function HeroSection() {
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-white text-center sm:text-left">
               Simple Steps to Get Your Loan
             </h2>
-            <p className="text-sm sm:text-base lg:text-lg text-white/90 text-center sm:text-right max-w-md">
+            <p className="text-sm sm:text-base lg:text-lg text-white/90 text-justify max-w-md">
               Our loan process is fast and reliable you can get your loan in as little as 24 hours.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 sm:gap-6 xl:gap-6">
+          <div className="grid grid-cols-1 justify-items-center sm:grid-cols-2 xl:grid-cols-4 gap-5 sm:gap-6 xl:gap-6">
             <StepCard
               step="1"
               title="Loan Request"
