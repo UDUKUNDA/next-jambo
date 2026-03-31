@@ -10,6 +10,8 @@
   :root {
     --cj-logo-w: clamp(200px, 18vw, 420px);
     --cj-logo-h: clamp(44px, 5vw, 84px);
+    --cj-hero-badge-scale: clamp(0.86, calc(0.65 + 0.08vw), 1);
+    --cj-hero-handshake-gap: clamp(52px, 7vh, 84px);
   }
   
   body {
@@ -32,9 +34,42 @@
     }
   }
 
-  @media (min-width: 1629px) and (min-height: 847px) {
-    .hero-illustration {
-      display: block;
+  @keyframes cj-float {
+    0% {
+      transform: translate3d(0, 0, 0);
     }
+    50% {
+      transform: translate3d(0, -8px, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes cj-pulse-slow {
+    0%,
+    100% {
+      opacity: 0.55;
+    }
+    50% {
+      opacity: 0.85;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-float,
+    .animate-pulse-slow {
+      animation: none !important;
+    }
+  }
+
+  .animate-float {
+    animation: cj-float 4.2s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .animate-pulse-slow {
+    animation: cj-pulse-slow 3.6s ease-in-out infinite;
+    will-change: opacity;
   }
 }
