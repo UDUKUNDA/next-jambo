@@ -21,7 +21,11 @@ export function HeroSection() {
                 Real{" "}
                 <span className="relative inline-block">
                   Growth.
-                  <span className="absolute -bottom-2 left-0 right-0 h-[2px] bg-[#82FB8E]" />
+                  <img
+                    src="/assets/highlight.svg"
+                    alt=""
+                    className="pointer-events-none absolute -bottom-5 left-1/2 w-[115%] -translate-x-1/2 select-none"
+                  />
                 </span>
               </div>
             </h1>
