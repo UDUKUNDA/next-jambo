@@ -28,7 +28,7 @@
     display: none;
   }
 
-  @media (min-width: 1024px) and (min-height: 871px) {
+  @media (min-width: 1024px) {
     .hero-illustration {
       display: block;
     }
