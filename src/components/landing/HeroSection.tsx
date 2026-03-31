@@ -11,9 +11,9 @@ export function HeroSection() {
       {/* Content Container */}
       <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-8 sm:py-12 lg:py-16">
         {/* Hero Content */}
-        <div className="snap-start flex min-h-[calc(100svh-4rem)] flex-col items-center justify-center gap-8 lg:min-h-0 lg:items-start [@media(min-width:1629px)_and_(min-height:847px)]:flex-row [@media(min-width:1629px)_and_(min-height:847px)]:justify-between [@media(min-width:1629px)_and_(min-height:847px)]:gap-12 xl:gap-16">
+        <div className="snap-start flex min-h-[calc(100svh-4rem)] flex-col items-center justify-center gap-8 lg:min-h-0 lg:flex-row lg:items-center lg:justify-between lg:gap-12 xl:gap-16">
           {/* Left Column - Text Content */}
-          <div className="w-full text-center lg:text-left [@media(min-width:1629px)_and_(min-height:847px)]:w-1/2 [@media(min-width:1629px)_and_(min-height:847px)]:text-left">
+          <div className="w-full text-center lg:flex-1 lg:text-left">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[67.763px] font-extrabold leading-tight text-white mb-4 sm:mb-6">
               <div>Small Loans.</div>
               <div>Big Impact.</div>
@@ -39,7 +39,7 @@ export function HeroSection() {
           </div>
 
           {/* Right Column - Illustration (hidden on small screens) */}
-          <div className="hidden w-full mt-8 [@media(min-width:1629px)_and_(min-height:847px)]:block [@media(min-width:1629px)_and_(min-height:847px)]:w-1/2 [@media(min-width:1629px)_and_(min-height:847px)]:mt-0">
+          <div className="hero-illustration w-full mt-8 lg:mt-0 lg:w-1/2">
             <div className="max-w-md mx-auto lg:max-w-full">
               <HeroIllustration />
             </div>
