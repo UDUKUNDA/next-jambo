@@ -13,8 +13,8 @@ export function HeroSection() {
         {/* Hero Content */}
         <div className="snap-start flex min-h-[calc(100svh-4rem)] flex-col items-center justify-center gap-8 lg:min-h-0 lg:flex-row lg:items-center lg:justify-between lg:gap-12 xl:gap-16">
           {/* Left Column - Text Content */}
-          <div className="w-full text-center lg:flex-1 lg:text-left">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[67.763px] font-extrabold leading-tight text-white mb-4 sm:mb-6">
+          <div className="w-full text-left lg:flex-1 lg:text-left">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[67.763px] font-extrabold leading-[1.06] tracking-[-0.02em] text-white mb-4 sm:mb-6">
               <div>Small Loans.</div>
               <div>Big Impact.</div>
               <div>
@@ -30,7 +30,7 @@ export function HeroSection() {
               </div>
             </h1>
 
-            <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 max-w-lg mx-auto text-justify lg:mx-0 lg:text-left">
+            <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 max-w-lg mx-auto text-left lg:mx-0 lg:text-left">
               Fast, affordable, and flexible micro-loans tailored to your needs.
             </p>
 
