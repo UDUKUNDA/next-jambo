@@ -52,11 +52,11 @@ export function HeroSection() {
 
         {/* Steps Section */}
         <div className="snap-start mt-16 flex min-h-[calc(100svh-4rem)] flex-col justify-center sm:mt-20 lg:min-h-0 lg:mt-24">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-8 sm:mb-10">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-white text-center sm:text-left">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8 sm:mb-10">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium leading-[1.06] tracking-[-0.015em] text-white text-left">
               Simple Steps to Get Your Loan
             </h2>
-            <p className="text-sm sm:text-base lg:text-lg text-white/90 text-justify max-w-md">
+            <p className="text-sm sm:text-base lg:text-lg text-white/85 leading-relaxed tracking-[0.01em] text-left sm:text-justify max-w-md">
               Our loan process is fast and reliable you can get your loan in as little as 24 hours.
             </p>
           </div>
