@@ -64,7 +64,12 @@ export function MobileMenuOverlay({ open, items, onClose }: Props) {
         <div className="flex h-full flex-col px-5 pb-10 pt-5">
           <div className="flex items-center justify-between">
             <Link href="/" className="block flex-shrink-0" onClick={onClose}>
-              <img src="/creditJambo.png" alt="Credit Jambo" className="h-10 w-auto object-contain" />
+              <img
+                src="/creditJambo.png"
+                alt="Credit Jambo"
+                className="object-cover object-center drop-shadow-[0_0_22px_rgba(130,251,142,0.18)]"
+                style={{ width: "min(var(--cj-logo-w), calc(100vw - 104px))", height: "var(--cj-logo-h)" }}
+              />
             </Link>
             <button
               type="button"
@@ -110,4 +115,3 @@ export function MobileMenuOverlay({ open, items, onClose }: Props) {
     </div>
   );
 }
-
