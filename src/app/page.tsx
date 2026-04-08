@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/landing/HeroSection";
 import { JamboNav } from "@/components/landing/JamboNav";
 import { DecorIconsSection } from "@/components/landing/DecorIconsSection";
+import { LoanOptionsSection } from "@/components/landing/LoanOptionsSection";
 import { PaymentPlanSection } from "@/components/landing/PaymentPlanSection";
 
 export default function HomePage() {
@@ -10,6 +11,7 @@ export default function HomePage() {
       <HeroSection />
       <PaymentPlanSection />
       <DecorIconsSection />
+      <LoanOptionsSection />
     </main>
   );
 }
